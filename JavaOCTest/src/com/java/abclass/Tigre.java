@@ -1,6 +1,6 @@
 package com.java.abclass;
 
-/*Create class Lion inherits class Felin
+/*Create class Tigre inherits class Felin
  *Determinate couleur, poids and cri
  */
 
