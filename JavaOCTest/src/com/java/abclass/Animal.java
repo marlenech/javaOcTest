@@ -2,7 +2,7 @@ package com.java.abclass;
 
 //Create class abstract Animal with method manger boire deplacement crier
 
-public abstract class Animal {
+ public abstract class Animal {
 
 	protected String couleur;
 	protected int poids;
