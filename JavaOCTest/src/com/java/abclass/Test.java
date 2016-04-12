@@ -2,25 +2,30 @@ package com.java.abclass;
 
 public class Test {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	//Declaration of exception
-		throws PoidsException {
-		Tigre animal = new Tigre("Jaune", -2);
+	
+		Tigre animal= null;
+		try {
+			animal = new Tigre("Jaune", -2);
 		
-			//action if exception is true
-			if (animal.poids < 0)
-				throw new PoidsException();
-			else {
+		} catch (PoidsException e) {}
+		//if exception, the program continues anyway
+		finally {
+			
+			if(animal==null)
+				animal = new Tigre();
+		}
 		animal.boire();
 		animal.manger();
 		animal.deplacement();
 		animal.crier();
+		
+		
 		System.out.println(animal.toString());
-
+		
 	}
 		}
 	
 	
 
-}

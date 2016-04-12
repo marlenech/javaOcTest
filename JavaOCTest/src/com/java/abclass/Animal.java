@@ -2,7 +2,8 @@ package com.java.abclass;
 
 //Create class abstract Animal with method manger boire deplacement crier
 
- public abstract class Animal {
+ abstract class Animal{
+	 
 
 	protected String couleur;
 	protected int poids;
@@ -19,11 +20,13 @@ package com.java.abclass;
 	
 	abstract void crier();
 	
+	String className = this.getClass().getName();
+	
 	public String toString(){
 		//getClass is a method of class Object. Result is class <name of class>
-		
-		String str = "Je suis un objet de la " + this.getClass() +", je suis " + this.couleur + ",je pèse "+ this.poids; return str;
+		String str = "Je suis un objet de la " + className +", je suis " + this.couleur + ",je pèse "+ this.poids; return str;
 	
 		
 	}
 }
+ 

@@ -9,9 +9,19 @@ public class Tigre extends Felin {
 //Default constructor
 	 }
 	 
-	 public Tigre(String couleur, int poids){
+	 public Tigre(String couleur, int poids) 
+	//Declaration of exception
+				throws PoidsException {
+				
+				
+					//action if exception is true
+					if (poids < 0)
+						throw new PoidsException();
+					else {
+			 
 		 this.couleur = couleur;
 		 this.poids = poids;
+	 }
 	 }
 	
 	void crier() {
