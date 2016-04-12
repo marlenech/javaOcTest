@@ -2,9 +2,16 @@ package com.java.abclass;
 
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
 		// TODO Auto-generated method stub
-		Loup animal = new Loup("Gris", 20);
+	//Declaration of exception
+		throws PoidsException {
+		Tigre animal = new Tigre("Jaune", -2);
+		
+			//action if exception is true
+			if (animal.poids < 0)
+				throw new PoidsException();
+			else {
 		animal.boire();
 		animal.manger();
 		animal.deplacement();
@@ -12,5 +19,8 @@ public class Test {
 		System.out.println(animal.toString());
 
 	}
+		}
+	
+	
 
 }
