@@ -1,5 +1,8 @@
 package com.java.abclass;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Test {
 
 	public static void main(String[] args) {
@@ -23,6 +26,21 @@ public class Test {
 		
 		
 		System.out.println(animal.toString());
+		
+		//Create new collection for testing "genericité"
+		
+		System.out.println("List de String");
+		System.out.println("______________");
+		List<String> listeString=new ArrayList<String>();
+		listeString.add("une chaîne");
+		listeString.add("une autre");
+		listeString.add("puis une autre");
+		listeString.add("puis une dernière");
+		
+		for(String str : listeString)
+			System.out.println(str);
+		
+		
 		
 	}
 		}
