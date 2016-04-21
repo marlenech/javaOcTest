@@ -14,10 +14,10 @@ public class Tableau {
 		parcourirTable(tableau);
 		
 		int [] tab  = {10, 11, 12};
-		
+		parcourirTableInt(tab);
 		
 		String [] chaine = {"un", "deux","trois"};
-		parcourirTableSimple(chaine);
+		parcourirTableChaine(chaine);
 		
 		for (int i = 0; i<=tab.length; i++);
 		{
@@ -45,8 +45,15 @@ public class Tableau {
 					}
 				
 				// Display data of table "chaine"
-				static void parcourirTableSimple(String [] chaine) {
+				static void parcourirTableChaine(String [] chaine) {
 					for (String simple : chaine) {
+						System.out.println(simple);
+					}
+				}
+				
+				// Display data of table "tab" by overloading the method parcourirTableChaine() 
+				static void parcourirTableInt(int [] tab) {
+					for (int simple : tab) {
 						System.out.println(simple);
 					}
 				}

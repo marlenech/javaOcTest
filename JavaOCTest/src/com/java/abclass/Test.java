@@ -9,6 +9,8 @@ public class Test {
 		// TODO Auto-generated method stub
 	
 		Tigre animal= null;
+		
+		
 		try {
 			animal = new Tigre("Jaune", -2);
 		
@@ -39,6 +41,17 @@ public class Test {
 		
 		for(String str : listeString)
 			System.out.println(str);
+		
+		System.out.println("List de Float");
+		System.out.println("______________");
+		List<Float> listeFloat=new ArrayList<Float>();
+		listeFloat.add(12.25f);
+		listeFloat.add(13.78f);
+		listeFloat.add(1.67f);
+		listeFloat.add(124567.89f);
+		
+		for(Float f : listeFloat)
+			System.out.println(f);
 		
 		
 		
