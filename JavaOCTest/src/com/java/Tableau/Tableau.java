@@ -9,7 +9,12 @@ public class Tableau {
 		
 		String tableau [] [] = {{"1","3","5","9"},{"0","2","4","6"}};
 		
+		// call the method parcourirTable()
+		
+		parcourirTable(tableau);
+		
 		int [] tab  = {10, 11, 12};
+		
 		
 		for (int i = 0; i<=tab.length; i++);
 		{
@@ -20,21 +25,22 @@ public class Tableau {
 		// Display 3rd data of second table "tableau"		
 		System.out.println(tableau [1] [2]);
 		
-		// Display all the data tables of "tableau"
 		
-		for (String tab1[] : tableau) {
-			for (String str : tab1) 
-		{
-		System.out.println(str);
-		}
-			}
 		
 	}
-		
-		
-		
-			}
-		
+	// Display all the data tables of "tableau" with a method
 	
+				static void parcourirTable(String[][] tableau) {
+				
+					for (String tab1[] : tableau) {
+						for (String str : tab1) 
+					{
+					System.out.println(str);
+					}
+						}
+				
+					}
+	
+		}
 
 
