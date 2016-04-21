@@ -16,6 +16,9 @@ public class Tableau {
 		int [] tab  = {10, 11, 12};
 		
 		
+		String [] chaine = {"un", "deux","trois"};
+		parcourirTableSimple(chaine);
+		
 		for (int i = 0; i<=tab.length; i++);
 		{
 		
@@ -40,7 +43,14 @@ public class Tableau {
 						}
 				
 					}
-	
+				
+				// Display data of table "chaine"
+				static void parcourirTableSimple(String [] chaine) {
+					for (String simple : chaine) {
+						System.out.println(simple);
+					}
+				}
+				
 		}
 
 
